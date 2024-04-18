@@ -4,6 +4,9 @@ static std::string_view splinxes[] = {
 	"Splinxle",
 	"Sploinx",
 	"Splinxy",
+	"Splintz",
+	"Splinxer",
+	"Splainx",
 };
 
 void
