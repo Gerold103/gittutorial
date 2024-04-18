@@ -26,6 +26,12 @@ static std::string_view values[] = {
 	"Vyluxe",
 };
 
+void
+FlibberCollection::flibber()
+{
+	myFlibbers.push_back(makeFlibber());
+}
+
 Flibber
 makeFlibber()
 {
