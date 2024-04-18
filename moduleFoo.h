@@ -9,4 +9,4 @@ struct ObjectFoo
 	char myZorble = 'a';
 };
 
-ObjectFoo makeFoo();
+ObjectFoo makeFoo(int wibble);

@@ -7,7 +7,7 @@ main()
 {
 	std::cout << "#### Foo\n";
 
-	ObjectFoo f = makeFoo();
+	ObjectFoo f = makeFoo(10);
 	std::cout << "\tFoo's wibble: " << f.myWibble << '\n';
 	std::cout << "\tFoo's zorble: " << f.myZorble << '\n';
 

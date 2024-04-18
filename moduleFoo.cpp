@@ -7,7 +7,9 @@ ObjectFoo::zorble()
 }
 
 ObjectFoo
-makeFoo()
+makeFoo(int wibble)
 {
-	return ObjectFoo();
+	ObjectFoo f;
+	f.myWibble = wibble;
+	return f;
 }
