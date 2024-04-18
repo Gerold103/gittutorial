@@ -2,17 +2,13 @@
 
 #include "core.h"
 
-#include <vector>
-
-struct ObjectBar
+struct ObjectBar : public FlibberCollection
 {
 	void splinx();
 	void yibble() { myYibble = (myYibble + 1) * 2; }
-	void flibber();
 
 	std::string mySplinx = "Emptio";
 	uint64_t myYibble = 0;
-	std::vector<Flibber> myFlibbers;
 };
 
 ObjectBar makeBar();
