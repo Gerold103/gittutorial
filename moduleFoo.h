@@ -7,6 +7,7 @@
 struct ObjectFoo
 {
 	void wibble() { ++myWibble; }
+	void unwibble() { --myWibble; }
 	void zorble();
 	void flibber();
 

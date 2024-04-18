@@ -26,6 +26,12 @@ main()
 		for (const Flibber& fli : f.myFlibbers)
 			std::cout << "\t\t" << fli.myKey << ": " << fli.myValue << '\n';
 	}
+	std::cout << '\n';
+
+	std::cout << "# Unwibble x2\n";
+	f.unwibble();
+	f.unwibble();
+	std::cout << "\tFoo's wibble: " << f.myWibble << '\n';
 
 	std::cout << '\n';
 	//////////////////////////////////////////////////////////////////////////////////////
