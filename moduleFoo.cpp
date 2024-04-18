@@ -16,12 +16,7 @@ ObjectFoo::toString(uint8_t tabs) const
 	std::string res;
 	res += tab + "wibble: " + std::to_string(myWibble) + '\n';
 	res += tab + "zorble: " + myZorble + '\n';
-	if (myFlibbers.size() > 0)
-	{
-		res += tab + "flibbers:\n";
-		for (const Flibber& fli : myFlibbers)
-			res += tab + '\t' + fli.myKey + ": " + fli.myValue + '\n';
-	}
+	res += FlibberCollection::toString(tabs);
 	return res;
 }
 

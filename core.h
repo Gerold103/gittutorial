@@ -12,6 +12,7 @@ struct Flibber
 struct FlibberCollection
 {
 	void flibber();
+	std::string toString(uint8_t tabs) const;
 
 	std::vector<Flibber> myFlibbers;
 };
