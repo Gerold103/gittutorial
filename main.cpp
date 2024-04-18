@@ -38,22 +38,13 @@ main()
 	std::cout << "#### Bar\n";
 
 	ObjectBar b = makeBar();
-	std::cout << "\tBar's splinx: " << b.mySplinx << '\n';
-	std::cout << "\tBar's yibble: " << b.myYibble << '\n';
-	std::cout << '\n';
+	std::cout << b.toString(1) << '\n';
 
 	std::cout << "# Perform splinx-yibbling\n";
 	b.splinx();
 	b.yibble();
 	for (int i = 0; i < 5; ++i)
 		b.flibber();
-	std::cout << "\tBar's splinx: " << b.mySplinx << '\n';
-	std::cout << "\tBar's yibble: " << b.myYibble << '\n';
-	if (b.myFlibbers.size() > 0)
-	{
-		std::cout << "\tBar's flibbers:\n";
-		for (const Flibber& fli : b.myFlibbers)
-			std::cout << "\t\t" << fli.myKey << ": " << fli.myValue << '\n';
-	}
+	std::cout << b.toString(1);
 	return 0;
 }
